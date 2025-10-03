@@ -20,7 +20,7 @@ function ligarAmarelo(){
 
     //fazendo publish no tópico, (broker)
     const msgAmar = new Paho.MQTT.Message("");
-    msgAmar.destinationName = "senai661/led/on"
+    msgAmar.destinationName = "pvc07/led/on"
     clientWeb.send(msgAmar)
 }
 
