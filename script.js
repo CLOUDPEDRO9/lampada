@@ -28,6 +28,6 @@ function desligar(){
     document.getElementById("amarelo").classList.remove("amar");
 
     let msg = new Paho.MQTT.Message(``);
-    msg.destinationName = "senai661/led/off"
+    msg.destinationName = "pvc07/led/off"
     clientWeb.send(msg);
 }
